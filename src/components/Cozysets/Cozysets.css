@@ -1,12 +1,9 @@
 .cozysets {
-    margin-top: 80px;
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 80px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "Montserrat", sans-serif;
-    box-sizing: border-box;
+  padding: 40px 80px;
+  font-family: sans-serif;
+  margin-left: 8%;
+  margin-right: 8%;
+  text-align: left;
   }
   
   .cozysets h2 {
@@ -52,7 +49,7 @@
     }
   }
   
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     .cozysets-grid {
       grid-template-columns: 1fr;
     }

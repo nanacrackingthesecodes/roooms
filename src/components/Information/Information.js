@@ -1,3 +1,4 @@
+import React from "react";
 import "./Information.css";
 
 const smallInformation = [
@@ -25,23 +26,21 @@ function Information() {
             <h3>ІНФОРМАЦІЯ</h3>
             <p>
               lorem ipsum dolor sit amet consectetur. bibendum neque at em integer
-              integer. tempus a mi in enim dui rhoncus vulputate nulla et. ornare
-              sed cursus sed viverra.
+              integer. tempus a mi in enim dui rhoncus vulputate nulla et.
             </p>
           </div>
         </div>
       </div>
-      <div className="information__small-list">
-  {smallInformation.map(item => (
-    <div className="information__small-item" key={item.id}>
-      <img src={item.image} alt={item.title} />
-      <p>{item.title}</p>
-    </div>
-  ))}
-</div>
 
-
-
+      {/* КАК smallRooms */}
+      <div className="small-list">
+        {smallInformation.map((item) => (
+          <div key={item.id} className="small-item">
+            <img src={item.image} alt={item.title} />
+            <p>{item.title}</p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

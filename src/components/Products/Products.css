@@ -1,10 +1,9 @@
 .products {
-    margin-top: 80px;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 80px;
-    box-sizing: border-box;
+  padding: 40px 80px;
+  font-family: sans-serif;
+  margin-left: 8%;
+  margin-right: 8%;
+  text-align: left;
   }
   
   .products-title {

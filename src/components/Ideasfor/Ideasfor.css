@@ -1,8 +1,9 @@
 .ideasfor {
-    padding: 40px 80px;
+  padding: 40px 80px;
+  font-family: sans-serif;
   margin-left: 8%;
   margin-right: 8%;
-  font-family: sans-serif;
+  text-align: left;
   }
   
   .ideasfor__title {
