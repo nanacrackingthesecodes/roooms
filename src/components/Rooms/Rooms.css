@@ -82,26 +82,38 @@
   @media (max-width: 768px) {
     .rooms {
       padding: 20px;
+      margin-left: 9%;
+      margin-right: 9%;
+    }
+    .rooms_title{
+      text-align: center;
     }
   
     .rooms__card {
       flex: 0 0 140px;
       height: 200px;
     }
-  
-    .rooms__arrow {
-      width: 36px;
-      height: 36px;
-    }
-  
-    .rooms__arrow.left {
-      left: -10px;
-    }
-  
-    .rooms__arrow.right {
-      right: -10px;
+    .rooms_arrow.right{
+      display:none;
     }
   }
+    @media (max-width: 340px) {
+      .rooms {
+        padding: 20px;
+        margin-left: 9%;
+        margin-right: 9%;
+      }
+    
+      .rooms_card {
+        flex: 0 0 140px;
+        height: 200px;
+      }
+    
+      .rooms_arrow.right {
+        display: none;
+      }
+    }
+
   .small-list {
     display: flex;
     gap: 24px;

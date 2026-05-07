@@ -3,23 +3,23 @@ import "./Rooms.css";
 
 function Rooms() {
   const bigRooms = [
-    { id: 1, image: "/rooms1.jpg", title: "НАЗВА НАБОРУ" },
-    { id: 2, image: "/rooms2.jpg", title: "НАЗВА НАБОРУ" },
-    { id: 3, image: "/rooms3.jpg", title: "НАЗВА НАБОРУ" },
-    { id: 4, image: "/rooms4.jpg", title: "НАЗВА НАБОРУ" },
-    { id: 5, image: "/rooms5.jpg", title: "НАЗВА НАБОРУ" },
-    { id: 6, image: "/rooms6.jpg", title: "НАЗВА НАБОРУ" },
-    { id: 7, image: "/rooms7.jpg", title: "НАЗВА НАБОРУ" },
+    { id: 1, image: "/rooms1.jpg", title: "ВІТАЛЬНЯ ЗАТИШКУ" },
+    { id: 2, image: "/rooms2.jpg", title: "СПАЛЬНЯ СПОКОЮ" },
+    { id: 3, image: "/rooms3.jpg", title: "КУХНЯ МІНІМАЛІЗМУ" },
+    { id: 4, image: "/rooms4.jpg", title: "РОБОЧИЙ ПРОСТІР" },
+    { id: 5, image: "/rooms5.jpg", title: "ДИТЯЧА ГАРМОНІЯ" },
+    { id: 6, image: "/rooms6.jpg", title: "СВІТЛА ВАННА КІМНАТА" },
+    { id: 7, image: "/rooms7.jpg", title: "ЗОНА ВІДПОЧИНКУ" },
   ];
 
   const smallRooms = [
-    { id: 11, image: "/small1.jpg", title: "НАЗВА НАБОРУ" },
-    { id: 12, image: "/small2.jpg", title: "НАЗВА НАБОРУ" },
-    { id: 13, image: "/small3.jpg", title: "НАЗВА НАБОРУ" },
-    { id: 14, image: "/small4.jpg", title: "НАЗВА НАБОРУ" },
-    { id: 15, image: "/small5.jpg", title: "НАЗВА НАБОРУ" },
-    { id: 16, image: "/small6.jpg", title: "НАЗВА НАБОРУ" },
-    { id: 17, image: "/small7.jpg", title: "НАЗВА НАБОРУ" },
+    { id: 11, image: "/small1.jpg", title: "МАЛЕНЬКА ВІТАЛЬНЯ" },
+    { id: 12, image: "/small2.jpg", title: "КОМПАКТНА КУХНЯ" },
+    { id: 13, image: "/small3.jpg", title: "ЗАТИШНИЙ КУТОК" },
+    { id: 14, image: "/small4.jpg", title: "СКАНДІ СПАЛЬНЯ" },
+    { id: 15, image: "/small5.jpg", title: "ОРГАНІЗОВАНИЙ ДІМ" },
+    { id: 16, image: "/small6.jpg", title: "СТИЛЬ MINIMAL" },
+    { id: 17, image: "/small7.jpg", title: "ТЕПЛА АТМОСФЕРА" },
   ];
 
   const Track = ({ data }) => {
@@ -74,7 +74,6 @@ function Rooms() {
       <h2 className="rooms__title">кімнати</h2>
 
       <Track data={bigRooms} />
-
       <div className="small-list">
         {smallRooms.map((item) => (
           <div key={item.id} className="small-item">

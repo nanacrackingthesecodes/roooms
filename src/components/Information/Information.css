@@ -1,69 +1,77 @@
 .information {
-  padding: 40px 80px;
+  width: 100%;
+  padding: 60px 8%;
+  box-sizing: border-box;
   font-family: sans-serif;
-  margin-left: 8%;
-  margin-right: 8%;
-  text-align: left;
 }
+
 .information-title {
   font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 24px;
+  font-weight: 700;
+  margin-bottom: 32px;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: left;
 }
 .information-wrapper {
   width: 100%;
-  max-width: 1480px;
   display: flex;
-  justify-content: center;
-  padding: 0 40px;
-  box-sizing: border-box;
-}
-.information-image {
-  width: 939px;
-  height: 595px;
+  align-items: stretch;
+  margin-bottom: 32px;
 }
 
-.information-grey {
+.information-image {
+  width: 65%;
+  min-height: 595px;
+}
+
+.information-image {
+  width: 65%;
+  min-height: 595px;
+}
+
+.information-main-img {
   width: 100%;
   height: 100%;
-  background: #c4c4c4;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+  display: block;
 }
+
 .information-card {
-  width: 541px;
-  height: 595px;
+  width: 35%;
+  min-height: 595px;
   background: #f2f2f2;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 0 20px 20px 0;
 
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .information-card-content {
-  padding: 80px 40px;
+  padding: 60px 48px;
 }
 
 .information-card-content h3 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
-  margin-bottom: 20px;
+  line-height: 1.2;
+  text-align: left;
 }
 
 .information-card-content p {
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444;
+  text-align: left;
 }
 .small-list {
   display: flex;
   gap: 24px;
-  margin-top: 20px;
   overflow-x: auto;
   padding-bottom: 10px;
+  scroll-behavior: smooth;
 }
 
 .small-list::-webkit-scrollbar {
@@ -72,30 +80,36 @@
 
 .small-item {
   flex: 0 0 194px;
-  width: 194px;
-  height: 123px;
+  width: 180px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
+
 .small-item img {
-  width: 194px;
-  height: 93px;
+  width: 100%;
+  height: 120px;
   object-fit: cover;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-radius: 15px;
+  display: block;
 }
 
 .small-item p {
-  width: 100%;
-  margin-top: 6px;
+  margin-top: 10px;
   text-align: left;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   color: #000;
+  line-height: 1.4;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
 }
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
+  .information {
+    padding: 50px 6%;
+  }
+
   .information-wrapper {
     flex-direction: column;
   }
@@ -103,18 +117,108 @@
   .information-image,
   .information-card {
     width: 100%;
-    height: auto;
+    min-height: auto;
   }
 
-  .information-grey {
-    border-radius: 15px 15px 0 0;
+  .information-image {
+    height: 420px;
+  }
+
+  .information-main-img {
+    border-radius: 20px 20px 0 0;
   }
 
   .information-card {
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .information-card-content {
+    padding: 48px 40px;
+  }
+}
+@media (max-width: 768px) {
+  .information {
+    padding: 40px 20px;
+  }
+
+  .information-title {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .information-wrapper {
+    margin-bottom: 24px;
+  }
+
+  .information-image {
+    height: 260px;
+  }
+
+  .information-card-content {
+    padding: 32px 24px;
+  }
+
+  .information-card-content h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .information-card-content p {
+    font-size: 14px;
+    line-height: 1.7;
   }
 
   .small-list {
-    padding: 0 20px 10px;
+    gap: 16px;
+  }
+
+  .small-item {
+    flex: 0 0 150px;
+    width: 150px;
+  }
+
+  .small-item img {
+    height: 95px;
+    border-radius: 14px;
+  }
+
+  .small-item p {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .information {
+    padding: 32px 16px;
+  }
+
+  .information-image {
+    height: 220px;
+  }
+
+  .information-card-content {
+    padding: 24px 20px;
+  }
+
+  .information-card-content h3 {
+    font-size: 18px;
+  }
+
+  .information-card-content p {
+    font-size: 13px;
+  }
+
+  .small-item {
+    flex: 0 0 130px;
+    width: 130px;
+  }
+
+  .small-item img {
+    height: 82px;
+    border-radius: 12px;
+  }
+
+  .small-item p {
+    font-size: 11px;
   }
 }

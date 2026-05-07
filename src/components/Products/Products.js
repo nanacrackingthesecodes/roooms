@@ -1,15 +1,31 @@
 import "./Products.css";
 
-const productImages = [
-  "/product1.jpg",
-  "/product2.jpg",
-  "/product3.jpg",
-  "/product4.jpg",
+const products = [
+  {
+    img: "/product1.jpg",
+    name: "СТІЛ LAGOM",
+    desc: "Мінімалістичний стіл для роботи та навчання в скандинавському стилі",
+    price: "129$",
+  },
+  {
+    img: "/product2.jpg",
+    name: "КРІСЛО NORD",
+    desc: "Ергономічне крісло для комфортної роботи вдома",
+    price: "89$",
+  },
+  {
+    img: "/product3.jpg",
+    name: "ПОЛИЦЯ KUB",
+    desc: "Настінна полиця для організації простору",
+    price: "45$",
+  },
+  {
+    img: "/product4.jpg",
+    name: "СВІТИЛЬНИК SOFT",
+    desc: "М’яке тепле світло для затишної атмосфери",
+    price: "39$",
+  },
 ];
-
-const nameText = "НАЗВА ТОВАРУ";
-const descText = "Опис товару опис товару опис товару";
-const priceText = "001$";
 
 function Products() {
   return (
@@ -17,15 +33,15 @@ function Products() {
       <h2 className="products-title">ТОВАРИ</h2>
 
       <div className="products-grid">
-        {productImages.map((img, index) => (
+        {products.map((item, index) => (
           <div className="products-card" key={index}>
             <div className="products-img-wrap">
-              <img src={img} alt={nameText} />
+              <img src={item.img} alt={item.name} />
             </div>
 
-            <p className="products-name">{nameText}</p>
-            <p className="products-desc">{descText}</p>
-            <p className="products-price">{priceText}</p>
+            <p className="products-name">{item.name}</p>
+            <p className="products-desc">{item.desc}</p>
+            <p className="products-price">{item.price}</p>
           </div>
         ))}
       </div>

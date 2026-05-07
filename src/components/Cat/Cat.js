@@ -18,7 +18,7 @@ function Cat() {
         {products.map((img, index) => (
           <div className="cat-item" key={index}>
             <img src={img} alt="" />
-            <p>назва набору</p>
+            <p>скандинавський набір</p>
           </div>
         ))}
       </div>
