@@ -3,6 +3,7 @@
     font-family: sans-serif;
     margin-left: 8%;
     margin-right: 8%;
+    text-align:center;
   }
   
   .rooms__title {
@@ -11,7 +12,7 @@
     margin-bottom: 24px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
   }
   
   .rooms__container {
@@ -50,7 +51,6 @@
     padding: 8px 20px;
     border-radius: 25px;
     font-size: 12px;
-    font-weight: bold;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
@@ -98,7 +98,7 @@
     }
   }
     @media (max-width: 340px) {
-      .rooms {
+      .bigRooms {
         padding: 20px;
         margin-left: 9%;
         margin-right: 9%;
@@ -114,7 +114,7 @@
       }
     }
 
-  .small-list {
+  .smallRoom-list {
     display: flex;
     gap: 24px;
     margin-top: 20px;
@@ -122,11 +122,11 @@
     padding-bottom: 10px;
   }
   
-  .small-list::-webkit-scrollbar {
+  .smallRoom-list::-webkit-scrollbar {
     display: none;
   }
   
-  .small-item {
+  .smallRoom-item {
     flex: 0 0 194px;
     width: 194px;
     height: 123px;
@@ -135,7 +135,7 @@
     align-items: center;
   }
   
-  .small-item img {
+  .smallRoom-item img {
     width: 194px;
     height: 93px;
     object-fit: cover;
@@ -143,11 +143,12 @@
     border-bottom-left-radius: 15px;
   }
   
-  .small-item p {
+  .smallRoom-item p {
     width: 100%;
     margin-top: 6px;
     text-align: left;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: bold;
+    font-weight: 600;
     color: #000;
   }

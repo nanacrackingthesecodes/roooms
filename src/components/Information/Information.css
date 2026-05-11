@@ -3,6 +3,7 @@
   padding: 60px 8%;
   box-sizing: border-box;
   font-family: sans-serif;
+  text-align: center;
 }
 
 .information-title {
@@ -11,7 +12,7 @@
   margin-bottom: 32px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
 }
 .information-wrapper {
   width: 100%;
