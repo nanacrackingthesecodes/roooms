@@ -18,7 +18,7 @@ function Cozysets() {
 
   return (
     <section className="cozysets">
-      <h2>затишні набори</h2>
+      <h2>ЗАТИШНІ НАБОРИ</h2>
 
       <div className="cozysets-grid">
         {sets.map((item, index) => (

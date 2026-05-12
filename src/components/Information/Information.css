@@ -3,14 +3,13 @@
   padding: 60px 8%;
   box-sizing: border-box;
   font-family: sans-serif;
-  text-align: center;
 }
 
 .information-title {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 32px;
-  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
   text-transform: uppercase;
   text-align: center;
 }
@@ -46,8 +45,8 @@
   border-radius: 0 20px 20px 0;
 
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .information-card-content {
@@ -58,14 +57,14 @@
   font-size: 28px;
   font-weight: 600;
   line-height: 1.2;
-  text-align: left;
+  text-align: center;
 }
 
 .information-card-content p {
   font-size: 15px;
   line-height: 1.8;
   color: #444;
-  text-align: left;
+  text-align: center;
 }
 .small-list {
   display: flex;
