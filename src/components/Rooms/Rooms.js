@@ -30,10 +30,8 @@ function Rooms() {
       const container = trackRef.current;
       if (!container) return;
 
-      const scrollAmount = 300;
-
       container.scrollBy({
-        left: direction === "right" ? scrollAmount : -scrollAmount,
+        left: direction === "right" ? 300 : -300,
         behavior: "smooth",
       });
 
@@ -74,13 +72,32 @@ function Rooms() {
       <h2 className="rooms__title">кімнати</h2>
 
       <Track data={bigRooms} />
-      <div className="small-list">
-        {smallRooms.map((item) => (
-          <div key={item.id} className="small-item">
-            <img src={item.image} alt={item.title} />
-            <p>{item.title}</p>
-          </div>
-        ))}
+      <div className="smallRoom-list">
+        {smallRooms.map((item, index) => {
+          const isLast = index === smallRooms.length - 1;
+
+          const card = (
+            <div className="smallRoom-item">
+              <img src={item.image} alt={item.title} />
+              <p>{item.title}</p>
+            </div>
+          );
+
+          if (isLast) {
+            return (
+              <div key={item.id} className="smallRoom-center">
+                {card}
+              </div>
+            );
+          }
+
+          return (
+            <div key={item.id} className="smallRoom-item">
+              <img src={item.image} alt={item.title} />
+              <p>{item.title}</p>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
